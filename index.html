@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: 18px;
+        color: hsl(229, 23%, 23%);
+        background-color: hsl(185, 75%, 39%);
+
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+
+        background-image: url("images/bg-pattern-top.svg"),
+          url("images/bg-pattern-bottom.svg");
+        background-color: hsl(185, 75%, 39%);
+        background-repeat: no-repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: top -300px left -300px, bottom -300px right -300px;
+      }
+
+      main {
+        margin: auto;
+        /* height: auto; */
+        min-width: 350px;
+        /* max-width: 370px; */
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: #00000018 20px 20px 50px 1px;
+      }
+      .card {
+        background-image: url("./images/bg-pattern-card.svg");
+        border-radius: 20px 20px 0px 0px;
+        background-position: top;
+        background-repeat: repeat-x;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        margin-top: 80px;
+      }
+      .profile {
+        background-image: url("./images/image-victor.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 90px;
+        width: 90px;
+
+        border-radius: 200px;
+        border: 5px solid #ffffff;
+      }
+
+      footer {
+        margin: 20px 0px;
+        font-size: 18px;
+        color: hsl(229, 23%, 23%);
+      }
+      .title {
+        
+        margin: 10px 0px;
+        font-weight: 700;
+      }
+      .title span {
+        color: hsl(227, 10%, 46%) ;
+        font-weight: 400;
+      }
+
+      .subtitle {
+        color: hsl(0, 0%, 59%);
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 20px;
+        border-bottom: 1px solid hsla(0, 0%, 59%, 0.333);
+      }
+
+      .footer-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 30px;
+      }
+      .footer-title {
+        color: hsl(229, 23%, 23%);
+        font-weight: 700;
+      }
+
+      .footer-subtitle {
+        font-size: 12px;
+        color: hsl(0, 0%, 59%);
+        font-weight: 400;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media only screen and (max-width: 800px) {
+        body { 
+          background-position: top -600px left -800px , bottom -500px right -800px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <header>
+          <div class="profile"></div>
+        </header>
+      </div>
+      <footer>
+        <div class="title">Victor Crest <span>26</span></div>
+        <div class="subtitle">London</div>
+
+        <div class="footer-area">
+          <div>
+            <div class="footer-title">80K</div>
+            <div class="footer-subtitle">Followers</div>
+          </div>
+          <div>
+            <div class="footer-title">803K</div>
+            <div class="footer-subtitle">Likes</div>
+          </div>
+          <div>
+            <div class="footer-title">1.4K</div>
+            <div class="footer-subtitle">Photos</div>
+          </div>
+        </div>
+
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Supakorn Klampod</a>.
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
